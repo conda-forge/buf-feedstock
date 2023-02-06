@@ -6,3 +6,7 @@ conda_forge_output_validation: true
 test: native_and_emulated
 conda_build:
   pkg_format: '2'
+  error_overlinking: true
+github:
+  branch_name: main
+  tooling_branch_name: main
