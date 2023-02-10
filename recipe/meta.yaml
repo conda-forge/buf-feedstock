@@ -1,5 +1,5 @@
 {% set name = "buf" %}
-{% set version = "1.13.1" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/bufbuild/buf/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bed6990123dc9e419a1d8b2e3fa4e7cc45162f8583a839f0a92d1fddd41fe4fe
+  sha256: 76c1c33fc0e9b64374fe319283d0180233a0992f2d09d3e7864e1f4112e9f43d
 
 build:
   number: 0
@@ -15,7 +15,6 @@ build:
     - go build -v -o $PREFIX/bin/buf ./cmd/buf                                              # [not win]
     - go build -v -o $PREFIX/bin/protoc-gen-buf-breaking ./cmd/protoc-gen-buf-breaking      # [not win]
     - go build -v -o $PREFIX/bin/protoc-gen-buf-lint ./cmd/protoc-gen-buf-lint              # [not win]
-    
     - go install -v ./cmd/buf                           # [win]
     - go install -v ./cmd/protoc-gen-buf-breaking       # [win]
     - go install -v ./cmd/protoc-gen-buf-lint           # [win]
