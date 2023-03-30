@@ -1,11 +1,11 @@
-About buf
-=========
+About buf-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/buf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://buf.build/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/buf-feedstock/blob/main/LICENSE.txt)
 
 Summary: A new way of working with Protocol Buffers.
 
