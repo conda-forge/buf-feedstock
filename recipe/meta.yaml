@@ -1,5 +1,5 @@
 {% set name = "buf" %}
-{% set version = "1.17.0" %}
+{% set version = "1.31.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/bufbuild/buf/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4e618146ec56dc874213de8f15f472629d670c7d6dca3de3544bf046ed020c03
+  sha256: aa10b731ce0e8b0c51b1fca511d12183f578921cbe78f424b03854e5b3ed82ed
 
 build:
   number: 0
