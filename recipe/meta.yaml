@@ -10,7 +10,7 @@ source:
   sha256: e485494488ddae5fd0bdc8d7ee8e5b5cc6c266a50db1823d6e92d729dee05275
 
 build:
-  number: 0
+  number: 1
   script:
     - go build -v -o $PREFIX/bin/buf ./cmd/buf                                              # [not win]
     - go build -v -o $PREFIX/bin/protoc-gen-buf-breaking ./cmd/protoc-gen-buf-breaking      # [not win]
